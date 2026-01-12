@@ -11,12 +11,12 @@ validasi input menggunakan try-except untuk mencegah kesalahan saat memasukan da
 hasil data mahasiswa ditampilkan dalam bentuk tabel agar lebih mudah dibaca
 
 ## KODE PROGRAM
-#class data
+
 class Mahasiswa:
     def __init__(self, nama, nilai):
         self.nama = nama
         self.nilai = nilai
-#class process
+
 class MahasiswaProcess:
     def __init__(self):
         self.data_mahasiswa = []
@@ -26,7 +26,7 @@ class MahasiswaProcess:
 
     def get_data(self):
         return self.data_mahasiswa
-#classview + validasi
+
 class MahasiswaView:
     def input_mahasiswa(self):
         try:
@@ -52,7 +52,7 @@ class MahasiswaView:
 
         print("+----+----------------+--------+")
 
-#program utama
+
 def main():
     process = MahasiswaProcess()
     view = MahasiswaView()
@@ -87,6 +87,7 @@ def main():
 
 if __name__ == "__main__":
                 main()
+
 
 
 
